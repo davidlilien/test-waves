@@ -1,0 +1,119 @@
+@keyframes pulse1 {
+  0% {
+    transform: translate3d(0,0,1px)
+  }
+  100% {
+    
+    transform: translate3d(0,0,-1px)
+  }
+}
+
+@keyframes pulse1 {
+  0% {
+    
+    transform: translate3d(0,0,2px)
+  }
+  100% {
+    
+    transform: translate3d(0,0,-2px)
+  }
+}
+
+@keyframes pulse2 {
+  0% {
+    
+    transform: translate3d(0,0,3px)
+  }
+  100% {
+    
+    transform: translate3d(0,0,-3px)
+  }
+}
+
+@keyframes pulse3 {
+  0% {
+    
+    transform: translate3d(0,0,4px)
+  }
+  100% {
+    
+    transform: translate3d(0,0,-4px)
+  }
+}
+
+@keyframes pulse4 {
+  0% {
+    
+    transform: translate3d(0,0,5px)
+  }
+  100% {
+    
+    transform: translate3d(0,0,-5px)
+  }
+}
+
+@keyframes pulse5 {
+  0% {
+    
+    transform: translate3d(0,0,6px)
+  }
+  100% {
+    
+    transform: translate3d(0,0,-6px)
+  }
+}
+
+@keyframes pulse6 {
+  0% {
+    
+    transform: translate3d(0,0,7px)
+  }
+  100% {
+    
+    transform: translate3d(0,0,-7px)
+  }
+}
+
+@keyframes pulse7 {
+  0% {
+    
+    transform: translate3d(0,0,8px)
+  }
+  100% {
+    
+    transform: translate3d(0,0,-8px)
+  }
+}
+
+@keyframes pulse8 {
+  0% {
+    
+    transform: translate3d(0,0,9px)
+  }
+  100% {
+    
+    transform: translate3d(0,0,-9px)
+  }
+}
+
+@keyframes pulse9 {
+  0% {
+    
+    transform: translate3d(0,0,10px)
+  }
+  100% {
+    
+    transform: translate3d(0,0,-10px)
+  }
+}
+
+@keyframes pulse10 {
+  0% {
+    
+    transform: translate3d(0,0,11px)
+  }
+  100% {
+    
+    transform: translate3d(0,0,-11px)
+  }
+}
