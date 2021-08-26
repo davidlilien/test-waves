@@ -22,12 +22,12 @@ const anim = {
 
 function Box1(props: JSX.IntrinsicElements['mesh'] & { wireframe: boolean }) {
   const mesh2 = useRef<THREE.Mesh>(null!)
-  //useSpring({ 
-  //  ...anim,
-    // reverse: true,
-    // onChange: (param) => {/*mesh2.current.position.y = param.value.y*/ }
+  useSpring({ 
+    ...anim,
+     // reverse: true,
+     onChange: (param) => {mesh2.current.position.y = param.value.y }
 
-//});
+});
 
   
 
@@ -154,10 +154,11 @@ function Box3(props: JSX.IntrinsicElements['mesh'] & { wireframe: boolean }) {
   const points = useMemo(() => processPoints(undefined, height), []);
 
 
-  // useSpring({ 
-  //  ...anim,
-    // onChange: (param) => { /*processPoints(points, param.value.y); buffer.current.attributes.position.needsUpdate = true;*/ } 
-  //});
+  useSpring({ 
+    ...anim,
+
+     onChange: (param) => { processPoints(points, param.value.y); buffer.current.attributes.position.needsUpdate = true; } 
+  });
 
   useEffect(() => {
     buffer.current.setAttribute('position', new THREE.BufferAttribute(processPoints(points, value), 3));
@@ -193,7 +194,7 @@ export const Geometry = () => {
   return (<Canvas>
     <ambientLight />
     {/*<Box1 position={[0, 0, 0]} wireframe={false}/>*/}
-    {/*<Box1 position={[0, 0, 0]} wireframe={true}/>*/}
+    {<Box1 position={[0, 0, 0]} wireframe={true}/>}
     {/*<Box3 position={[-(MAX/2), 0, -(MAX/2)]}  wireframe={false}/>*/}
     <Box3 position={[-(MAX/2), 0, -(MAX/2)]}  wireframe={true}/>
     <Camera />
