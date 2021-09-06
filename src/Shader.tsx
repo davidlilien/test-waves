@@ -37,7 +37,7 @@ export const Shader = () => {
   return (<Canvas>
     <ambientLight />
     <Box3 position={[0, 0, -0]}  />
-    <PerspectiveCamera makeDefault name="FBO Camera" ref={virtualCamera} position={[0, 0, -15]} fov={120}></PerspectiveCamera>
+    <PerspectiveCamera makeDefault name="FBO Camera" ref={virtualCamera} position={[0, 0, -10]} fov={90}></PerspectiveCamera>
 <OrbitControls enableRotate={true} camera={virtualCamera.current} />
    
   </Canvas>)
