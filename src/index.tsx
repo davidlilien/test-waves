@@ -23,6 +23,6 @@ const Test = () => {
 }*/
 
 ReactDOM.render(
-  <><Audio /><FPSStats /></>,
+  <><Shader /><FPSStats /></>,
   document.getElementById('root')
 )
